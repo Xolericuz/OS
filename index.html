@@ -14,12 +14,12 @@
         }
 
         /* Mavzular */
-        body.theme-neon { --primary: #00ff41; --p-user: #00d4ff; }
-        body.theme-blood { --primary: #ff003c; --p-user: #ffffff; }
-        body.theme-cyber { --primary: #f0f; --p-user: #0ff; }
+        body.neon { --primary: #00ff41; --p-user: #00d4ff; }
+        body.blood { --primary: #ff003c; --p-user: #ffffff; }
+        body.cyber { --primary: #f0f; --p-user: #0ff; }
         /* Yangi mavzular qo'shildi */
-        body.theme-ice { --primary: #00ffff; --p-user: #ffffff; }
-        body.theme-gold { --primary: #ffd700; --p-user: #ff4500; }
+        body.ice { --primary: #00ffff; --p-user: #ffffff; }
+        body.gold { --primary: #ffd700; --p-user: #ff4500; }
 
         * { margin: 0; padding: 0; box-sizing: border-box; -webkit-font-smoothing: antialiased; }
 
@@ -38,7 +38,7 @@
             position: fixed;
             inset: 0;
             z-index: 1;
-            opacity: 0.50;
+            opacity: 0.70;
             pointer-events: none;
         }
 
@@ -177,7 +177,7 @@ const Shell = {
         'help': () => Shell.print(`
             <b>KATEGORIYALAR:</b><br>
             - [system]: status, clear, whoami<br>
-            - [visual]: theme [nomi] (neon, blood, cyber, ice, gold)<br>
+            - [visual]:  [nomi] (neon, blood, cyber, ice, gold)<br>
             - [social]: telegram, Instagram, home, github<br>
             - [hack]: scan [ip], start [id]<br>
             - [missions]: jobs
@@ -188,14 +188,14 @@ const Shell = {
         'theme': (args) => {
             const t = args[0] ? args[0].toLowerCase() : '';
             const themes = {
-                'neon': 'theme-neon',
-                'blood': 'theme-blood',
-                'qon': 'theme-blood',
-                'cyber': 'theme-cyber',
-                'ice': 'theme-ice',
-                'muz': 'theme-ice',
-                'gold': 'theme-gold',
-                'oltin': 'theme-gold'
+                'neon': 'neon',
+                'blood': 'blood',
+                'qon': 'blood',
+                'cyber': 'cyber',
+                'ice': 'ice',
+                'muz': 'ice',
+                'gold': 'gold',
+                'oltin': 'gold'
             };
 
             if(themes[t]) {
