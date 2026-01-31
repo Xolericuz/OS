@@ -101,17 +101,17 @@
 <div id="ui-wrapper" onclick="document.getElementById('cmd-input').focus()">
     <div id="output">
         <div class="log-sys">Welcome to the xoleric</div>
-        <div>Tizim holati: <span style="color:#0f0">XAVFSIZ</span> | Foydalanuvchi: <span class="p-user">Root</span></div>
+        <div>Tizim holati: <span style="color:#0f0">🏴‍☠️</span> | Foydalanuvchi: <span class="p-user">Root</span></div>
         <div style="color: #888;">'help' - barcha buyruqlar ro'yxati.</div>
         <hr style="border: 0; border-top: 1px solid #222; margin: 10px 0;">
     </div>
 
     <div class="prompt-box">
         <div class="p-head">
-            <span style="color:var(--primary)">┌──(</span><span class="p-user">root/>xoleric</span><span style="color:var(--primary)">)-[</span><span style="color:#fff">/home/xoleric</span><span style="color:var(--primary)">]</span>
+            <span style="color:var(--primary)">┌──(</span><span class="p-user">neo/>xoleric</span><span style="color:var(--primary)">)-[</span><span style="color:#fff">/home/xoleric</span><span style="color:var(--primary)">]</span>
         </div>
         <div class="p-input-line">
-            <span style="color:var(--primary)">└─></span>
+            <span style="color:var(--primary)">╰┈➤</span>
             <input type="text" id="cmd-input" spellcheck="false" autocomplete="off" autofocus>
         </div>
     </div>
@@ -258,7 +258,7 @@ Shell.input.addEventListener('keydown', e => {
     if(e.key === 'Enter') {
         const val = Shell.input.value.trim();
         if(!val) return;
-        Shell.print(`<span style="color:var(--primary)">┌──(root</xoleric)</span><br><span>└─$</span> ${val}`);
+        Shell.print(`<span style="color:var(--primary)">┌──(neo</xoleric)</span><br><span>╰┈➤</span> ${val}`);
         
         const args = val.split(' ');
         const cmd = args.shift().toLowerCase();
